@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-07-09T02:40:45Z",
+  "id": "flutter-instalacao",
+  "duration": 9,
+  "title": "Flutter - Instalação",
+  "authors": "Rodrigo Bossini",
+  "summary": "Neste codelab, você fará a instalação do framework Flutter.",
+  "source": "1kvCN1kfc0JtrpM4-Q5TIa0YBSKzHA960Xlc94uI2l88",
+  "theme": "flutter",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "flutter"
+  ],
+  "tags": [
+    "mobile"
+  ],
+  "feedback": "https://github.com/professorbossini/codelab-flutter-instalacao/issues",
+  "url": "flutter-instalacao"
+}
