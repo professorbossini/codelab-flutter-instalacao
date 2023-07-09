@@ -30,7 +30,7 @@
     
       <google-codelab-step label="Introdução" duration="0">
         <p class="image-container"><img style="width: 176.00px" src="img\\4e4d760a702d3ea3.png"></p>
-<p><strong>Última atualização:</strong> 08/07/2023</p>
+<p><strong>Última atualização:</strong> 09/07/2023</p>
 <p>Flutter é um arcabouço que viabiliza o desenvolvimento multiplataforma. Utilizando a linguagem de programação Dart, podemos desenvolver aplicações para</p>
 <ul>
 <li>Android</li>
@@ -112,7 +112,7 @@
 <p>Para realizar os testes, use <strong>Windows+R</strong> no teclado e digite <strong>cmd</strong>. Clique em <strong>OK</strong>.</p>
 <p class="image-container"><img style="width: 361.50px" src="img\\4176eb85b28d0162.png"></p>
 <p><strong>Use</strong></p>
-<pre>Where flutter dart</pre>
+<pre>where flutter dart</pre>
 <p>na esperança de obter o seguinte resultado, que indica que os utilitários flutter e dart podem ser executados na linha de comando.</p>
 <p class="image-container"><img style="width: 434.50px" src="img\\b35cc6a0fdee1d30.png"></p>
 <p>Lembre-se que o Flutter viabiliza o desenvolvimento multiplataforma. Cada plataforma possui algumas dependências que precisam estar instaladas adequadamente para que o desenvolvimento possa ser realizado. Use</p>
@@ -137,6 +137,51 @@
 </aside>
 <aside class="warning"><p><strong>Cuidado</strong>. Embora tenhamos como objetivo desenvolver com Flutter no ambiente Windows, isso não quer dizer que teremos esse ambiente como alvo. Nada impede, por exemplo, que desenvolvamos no Windows tendo como alvo o Android e o Linux. Ou seja, o aplicativo desenvolvido é que será executado nestes dois ambientes.</p>
 </aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Primeira aplicação Flutter" duration="3">
+        <p>Agora vamos criar  nossa primeira aplicação Flutter, com o intuito de testar a instalação do framework. Comece criando um diretório para abrigar seus projetos Flutter. Uma sugestão é <strong>C:\Users\rodri\Documents\workspaces\flutter</strong>. Abra um terminal e navegue até esse diretório com</p>
+<pre>cd C:\Users\rodri\Documents\workspaces\flutter</pre>
+<p>Execute</p>
+<pre>flutter create hello_world</pre>
+<p>para criar a aplicação. Repare que uma pasta chamada <strong>hello_world</strong> será criada.</p>
+<p>Abra o VS Code e clique em <strong>File &gt;&gt; Open Folder</strong>.</p>
+<p class="image-container"><img style="width: 315.00px" src="img\\9faa6e85cdb40031.png"></p>
+<p>Navegue no seu sistema de arquivos para encontrar a pasta do projeto e clique em <strong>Selecionar pasta.</strong></p>
+<p class="image-container"><img style="width: 624.00px" src="img\\d0f84463156725f0.png"></p>
+<p>Veja o resultado esperado. Observe que o Explorer do VS Code mostra o conteúdo da pasta do projeto. Além disso, a pasta está na raiz do Explorer do VS Code.</p>
+<p class="image-container"><img style="width: 441.50px" src="img\\8061da7570c1a5fb.png"></p>
+<p>No VS Code, clique em <strong>Terminal &gt;&gt; New Terminal </strong>para abrir um terminal interno do VS Code.</p>
+<p class="image-container"><img style="width: 341.36px" src="img\\e8e36531f176f035.png"></p>
+<h2 is-upgraded>Executando no Google Chrome</h2>
+<p>No terminal do VS Code, execute</p>
+<pre>flutter run</pre>
+<p>para iniciar a execução da aplicação. A seguir teremos de escolher a plataforma em que ela será executada. Observe que, no momento, temos três opções.</p>
+<p class="image-container"><img style="width: 485.50px" src="img\\70ef0e9a2e4e1c7b.png"></p>
+<p>Como não fizemos a instalação do Visual Studio, não poderemos executar a aplicação no Windows. Assim, escolha o Chrome, por exemplo, digitando <strong>2</strong>. Veja o resultado esperado. Ou seja, uma aba do Chrome exibe a aplicação.</p>
+<p class="image-container"><img style="width: 338.50px" src="img\\34a5ea1a5fe67cb4.png"></p>
+<h2 is-upgraded><strong>Executando no Android</strong></h2>
+<p>Para executar no Android, precisamos de um emulador em execução ou de um dispositivo conectado ao computador. Neste exemplo, vamos executar num emulador.</p>
+<aside class="warning"><p><strong>Cuidado</strong>. Estamos considerando que você já possui o Android Studio instalado e devidamente configurado, inclusive com um Android Virtual Device (AVD) criado.</p>
+</aside>
+<p>Para verificar quais AVDs estão disponíveis mas possivelmente ainda não em execução, use</p>
+<pre>emulator -list-avds</pre>
+<p>Veja um possível resultado.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\\5fd1dd62c2c98540.png"></p>
+<p>O texto destacado é o nome de um AVD que pode ser colocado em execução. Para tal, use</p>
+<pre>emulator -avd Pixel_3a_API_34_extension_level_7_x86_64</pre>
+<aside class="warning"><p><strong>Cuidado</strong>. Certifique-se de utilizar o nome de um AVD que você de fato possua em seu computador.</p>
+</aside>
+<p>Veja o resultado esperado.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\\2b9b1c4bab69328c.png"></p>
+<p>Observe que o emulador está em execução, simulando o funcionamento de um dispositivo real. Porém, ainda não dissemos que ele deve executar a aplicação Flutter. Para tal, comece abrindo um novo terminal interno do VS Code.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\\617b2c4b942c9358.png"></p>
+<p>A seguir, no novo terminal, use</p>
+<pre>flutter run</pre>
+<p>para executar a aplicação. Esse passo pode demorar um pouco, especialmente se for a primeira vez que você executa a aplicação. Veja o resultado esperado.</p>
+<p class="image-container"><img style="width: 533.50px" src="img\\b321715978e94355.png"></p>
 
 
       </google-codelab-step>
